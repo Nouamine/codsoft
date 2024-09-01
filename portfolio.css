@@ -1,0 +1,292 @@
+body {
+  background-image: url('https://th.bing.com/th/id/R.e2d64d124a41caa199df9014460d7383?rik=Sr7fRgURNMt1Lg&pid=ImgRaw&r=0');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+
+  
+  @keyframes slideDown {
+    from {
+      top: -100px;
+    }
+    to {
+      top: 0;
+    }
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 0.5s ease-out;
+  }
+  
+  header {
+    
+    color: #b56464;
+    padding: 10px 0;
+
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: right;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+  
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+  
+  
+  .intro {
+    animation: slideInLeft 5s ease-out forwards;
+    animation-delay: 0s;
+  }
+  
+  .skills-section {
+    animation: slideInRight 5s ease-out forwards;
+    animation-delay: 0s;
+  }
+  
+  .projects-section {
+    animation: slideInLeft 5s ease-out forwards;
+    animation-delay: 0s;
+  }
+  
+  .contact-section {
+    animation: slideInRight 5s ease-out forwards;
+    animation-delay: 0s;
+  }
+  
+  
+  .intro {
+    color: rgb(11, 11, 11);
+    text-align: center;
+    padding: 50px 20px;
+    
+  
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(234, 226, 226, 0.1);
+  }
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.2);
+  }
+  
+  .cta-buttons {
+    margin-top: 30px;
+  }
+  
+  .contact-button, .resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .contact-button:hover, .resume-button:hover {
+    background-color: #cd9494;
+  }
+
+  .skills-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .skills-content {
+    text-align: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px; /* Adjust space between image and text */
+  }
+  
+  .skills-description {
+    flex: 1; /* Allows text to take remaining space */
+    text-align: left;
+  }
+  
+  .skills-photo {
+    text-align: center;
+    
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-description h4 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .skill {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .skill h4 {
+    text-align: left;
+    
+    color: #1b7ba7;
+    margin-bottom: 10px;
+  }
+  
+  .skill p {
+    color: #000000;
+  }
+  
+
+  .projects-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .projects {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .projects h4 {
+    text-align: left;
+    
+    color: #2a83a9;
+  }
+  
+  .projects p {
+    text-align: left;
+    color: #000000;
+  }
+
+  .projects-photo {
+    text-align: center;
+    
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-section {
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(59, 57, 57, 0.3); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contact-photo {
+    text-align: center;
+    
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .contact h4 {
+    text-align: left;
+    
+    color: #333;
+  }
+  
+  .contact p {
+    text-align: center;
+    color: #7e78c6;
+  }
+
+  .social-icon {
+    width: 50px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-section {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  /* Add a black border to the bottom of each section */
+section {
+  border-bottom: 2px solid black; /* Adjust thickness as needed */
+  padding-bottom: 20px; /* Add padding to separate content from the border */
+  margin-bottom: 20px; /* Add margin to separate sections */
+}
+
+section:last-of-type {
+  border-bottom: none; /* Remove the border from the last section */
+}
+
+/* Adjustments for individual sections if needed */
+.skills-section,
+.projects-section,
+.contact-section {
+  padding: 50px 20px; /* Adjust padding as needed */
+}
+
+  
+
+  
